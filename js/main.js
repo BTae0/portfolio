@@ -395,12 +395,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = projectsData.find(p => p.id === id); // Array find
         if(!data) return;
 
+        const closeBtnHTML = `<button class="modal-close" onclick="closeModal()"><i class='bx bx-x'></i></button>`;
+
         if (data.customHTML) {
-            modalBody.innerHTML = data.customHTML;
+            modalBody.innerHTML = closeBtnHTML + data.customHTML;
         } else {
             const techTags = data.tech.map(t => `<span class="m-tag">${t}</span>`).join('');
 
             modalBody.innerHTML = `
+                ${closeBtnHTML}
                 <div class="modal-article">
                     <div class="m-header">
                         <h2 class="m-title">${data.title}</h2>
@@ -512,12 +515,24 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
 
-        if(lightboxContainer) {
-            lightboxContainer.onclick = (e) => {
-                if(e.target !== lightboxImg) closeLightbox();
-            };
-        }
         if(lightboxClose) lightboxClose.onclick = closeLightbox;
+        
+        // --- Keyboard Shortcuts (ESC, Backspace to close) ---
+        document.addEventListener('keydown', (e) => {
+            // ESC key (Escape) or Backspace key
+            if (e.key === 'Escape' || e.key === 'Backspace') {
+                // If Lightbox is open, close it first
+                if (lightboxContainer && lightboxContainer.classList.contains('active')) {
+                    closeLightbox();
+                    e.preventDefault(); // prevent default backspace behavior
+                } 
+                // If Modal is open, close it
+                else if (modalOverlay && modalOverlay.classList.contains('active')) {
+                    closeModal();
+                    e.preventDefault(); // prevent default backspace behavior
+                }
+            }
+        });
 
     // --- Scroll Intersection Observer ---
     const initScrollObserver = () => {
