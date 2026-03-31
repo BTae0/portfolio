@@ -180,7 +180,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 { url: 'images/rpa-1/lotte_plan.jpg', caption: 'RPA 개발 및 고도화 일정 관리' },
                 { url: 'images/rpa-1/lotte_schedule_1.jpg', caption: '월별 근무 일정표 자동화' }
             ],
-            startDate: '2024-01-01'
+            startDate: '2024-01-01',
+            endDate: '2025-10-01'
         },
         {
             id: 'rpa-2', type: 'rpa',
@@ -191,7 +192,8 @@ document.addEventListener('DOMContentLoaded', () => {
             achievements: '담배 고시공고 데이터 수집 시간 90% 단축.',
             desc: '기존 전국 250개 지자체 담배 고시공고 데이터를 일일히 접속하여 수집하였으나, 자동 수집 및 정제하는 시스템을 구축하여 기존 일 8시간 소요되던 업무를 30분으로 단축했습니다. 또한 수집된 데이터를 정제하여 데이터 정확도를 획기적으로 향상시켰습니다.',
             files: [], // 빈 칸에 파일명을 적으면 됩니다. (예: files/rpa-2/여기에넣기)
-            startDate: '2023-10-01'
+            startDate: '2023-10-01',
+            endDate: '2023-11-01'
         },
         {
             id: 'rpa-3', type: 'rpa',
@@ -203,7 +205,8 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: '시프티(Shiftee) 시스템에서 근무 타입별 직원 분류 및 자동 일정 관리 프로세스를 구축하여 수작업을 자동화했습니다. 개인별 근무 타입에 관한 잔여일, 위반 사항 등 알림 메일 발송 및 규정에 맞추어 근무 타입 변경을 자동화했습니다.',
             files: [],
             screenshots: [],
-            startDate: '2023-07-01'
+            startDate: '2023-07-01',
+            endDate: '2023-09-01'
         },
         {
             id: 'app-1', type: 'app',
@@ -215,7 +218,8 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: 'Microsoft Forms와 Power Apps를 연동하여 상품권 구매 신청, 판매 데이터, 현황 데이터를 실시간 통합 관리하는 앱을 개발했습니다. 자동 알림 시스템으로 재고 관리 효율성을 높여 지급 누락을 방지하고 관리자의 업무 부담을 대폭 감소시켰습니다.',
             files: [],
             screenshots: [],
-            startDate: '2024-11-01'
+            startDate: '2024-11-01',
+            endDate: '2024-11-01'
         },
         {
             id: 'app-2', type: 'app',
@@ -227,7 +231,8 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: '기존 3개 프로그램으로 관리되던 협력사 계정 및 라이선스를 Power Apps 하나로 통합했습니다. 협력사 계정 리스트(CRUD) 관리가 가능한 앱을 개발하고, 기초부터 운영 단계까지 고객사 사용자를 위한 메인 강사로 교육을 진행했습니다.',
             files: [],
             screenshots: [],
-            startDate: '2023-11-01'
+            startDate: '2023-11-01',
+            endDate: '2024-01-01'
         },
         {
             id: 'app-3', type: 'app',
@@ -239,7 +244,8 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: '출퇴근 관리, 게시판, 회의실 예약, 인력 관리, 휴가 신청, 프로젝트 관리 등 다양한 업무 영역의 Power Apps 기반 시스템을 총괄 운영하며, 모든 시스템을 하나의 인터페이스로 관리하는 플랫폼을 구축하여 전사 업무 효율을 향상시켰습니다.',
             files: [],
             screenshots: [],
-            startDate: '2024-01-02'
+            startDate: '2024-01-02',
+            endDate: '2024-10-01'
         },
         {
             id: 'app-4', type: 'app',
@@ -251,7 +257,8 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: '전사 프로젝트 진행 현황을 실시간으로 관리하고, 진행 인원의 현황을 파악할 수 있는 시스템을 구축했습니다. 이를 통해 자동화되고 효율적인 인력 배정이 가능해졌습니다.',
             files: [],
             screenshots: [],
-            startDate: '2023-05-01'
+            startDate: '2023-05-01',
+            endDate: '2023-07-01'
         },
         {
             id: 'app-5', type: 'app',
@@ -262,7 +269,8 @@ document.addEventListener('DOMContentLoaded', () => {
             achievements: '전 직원 데이터 통합 및 효율적인 개인 성과 관리 구축.',
             desc: '직원의 역량, 프로필, 자격증 정보를 체계적으로 관리하는 시스템입니다. 자격증 만료 알림 및 프로필 최신화 요청 알림 기능을 구현하여 관리 누락을 완전히 방지했습니다.',
             files: [],
-            startDate: '2023-04-01'
+            startDate: '2023-04-01',
+            endDate: '2023-05-01'
         }
     ];
 
@@ -296,9 +304,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Sort (날짜순 / 이름순)
         filtered.sort((a, b) => {
             if (currentSort === 'date-desc') {
-                return new Date(b.startDate) - new Date(a.startDate);
+                return new Date(b.endDate) - new Date(a.endDate);
             } else if (currentSort === 'date-asc') {
-                return new Date(a.startDate) - new Date(b.startDate);
+                return new Date(a.endDate) - new Date(b.endDate);
             } else if (currentSort === 'asc') {
                 return a.shortTitle.localeCompare(b.shortTitle, 'ko');
             } else {
