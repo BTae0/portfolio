@@ -26,6 +26,32 @@ body {
     line-height: 1.6;
 }
 
+/* Custom Scrollbar - Modern & Minimalist */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    border: 3px solid var(--bg-darker);
+    transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* For Modal specific adjustment if the background differs */
+.modal-content::-webkit-scrollbar-thumb {
+    border: 3px solid #1e293b; /* matching var(--glass-bg) roughly or the modal bg */
+}
+
 a {
     text-decoration: none;
     color: inherit;
