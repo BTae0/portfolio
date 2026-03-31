@@ -283,6 +283,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const renderProjects = () => {
         if (!projectGrid) return;
+
+        // Stabilize height to prevent screen jump
+        projectGrid.style.minHeight = projectGrid.offsetHeight + 'px';
         projectGrid.innerHTML = ''; // Clear existing
 
         // Filter
@@ -337,6 +340,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
             projectGrid.appendChild(card);
+        });
+
+        // Reset min-height after content is populated
+        requestAnimationFrame(() => {
+            projectGrid.style.minHeight = 'auto';
         });
     };
 

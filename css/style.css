@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --bg-dark: #0f172a;
     --bg-darker: #0b1121;
     --primary-purple: #8338ec; /* Power Apps vibrant */
@@ -216,6 +216,7 @@ a {
 
 .notion-gallery-grid {
     display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.5rem;
+    align-items: start;
 }
 .notion-card {
     border-radius: 8px; overflow: hidden; cursor: pointer; transition: transform 0.3s;
