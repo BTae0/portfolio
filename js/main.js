@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    if (gateBtn && gateInput) {
         gateBtn.addEventListener('click', unlockPortfolio);
         gateInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') unlockPortfolio();
