@@ -1,22 +1,60 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Password Gate ---
+    // --- 포트폴리오 관리자 설정 (CONFIG) ---
+    const CONFIG = {
+        IS_LOGIN_GATE_ACTIVE: true,   // true: 로그인 필수, false: 전체 공개
+        ADMIN_CODE: 'adminbae',       // 관리자 영구 패스 코드
+        BYPASS_QUERY: 'mode',         // 바이패스 URL 쿼리 (예: ?mode=open)
+        BYPASS_VALUE: 'open'          // 바이패스 값
+    };
+
+    // --- Password Gate Elements ---
     const gateBtn = document.getElementById('gate-submit');
     const gateInput = document.getElementById('gate-password');
     const gateError = document.getElementById('gate-error');
     const gateContainer = document.getElementById('password-gate');
     const mainContent = document.getElementById('main-content');
+    const adminControls = document.getElementById('admin-controls');
+    const lockBtn = document.getElementById('btn-lock-site');
 
+    // 1. 초기 해제 상태 확인 (Global / URL / LocalStorage)
+    const checkUnlockState = () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const isBypassUrl = urlParams.get(CONFIG.BYPASS_QUERY) === CONFIG.BYPASS_VALUE;
+        const isPreviouslyUnlocked = localStorage.getItem('portfolio_unlocked') === 'true';
+
+        // 전역 설정이 꺼져있거나, 바이패스 주소이거나, 이미 인증된 브라우저인 경우
+        if (!CONFIG.IS_LOGIN_GATE_ACTIVE || isBypassUrl || isPreviouslyUnlocked) {
+            gateContainer.classList.add('hidden');
+            mainContent.classList.remove('hidden');
+            
+            // 관리자 코드로 인증된 경우에만 하단 관리 버튼 노출
+            if (isPreviouslyUnlocked) {
+                adminControls.classList.remove('hidden');
+            }
+            
+            initScrollObserver();
+            renderProjects();
+        }
+    };
+
+    // 2. 패스워드 입력 처리
     const unlockPortfolio = () => {
         const password = gateInput.value.trim();
-        // The requested default password
-        if (password === 'power') {
+        
+        if (password === 'power' || password === CONFIG.ADMIN_CODE) {
+            // 관리자 코드일 경우 브라우저에 저장
+            if (password === CONFIG.ADMIN_CODE) {
+                localStorage.setItem('portfolio_unlocked', 'true');
+                adminControls.classList.remove('hidden');
+            }
+
             gateContainer.style.opacity = '0';
             setTimeout(() => {
                 gateContainer.classList.add('hidden');
                 mainContent.classList.remove('hidden');
-                initScrollObserver(); // start fade-in animations
-                renderProjects();     // Render grid initially
+                initScrollObserver();
+                renderProjects();
             }, 500);
         } else {
             gateError.classList.remove('hidden');
@@ -29,6 +67,14 @@ document.addEventListener('DOMContentLoaded', () => {
         gateBtn.addEventListener('click', unlockPortfolio);
         gateInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') unlockPortfolio();
+        });
+    }
+
+    if (lockBtn) {
+        lockBtn.addEventListener('click', () => {
+            localStorage.removeItem('portfolio_unlocked');
+            alert('인증 정보가 초기화되었습니다. 다시 로그인 화면이 활성화됩니다.');
+            location.reload();
         });
     }
 
@@ -1589,5 +1635,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const animElements = document.querySelectorAll('.fade-in-up');
         animElements.forEach(el => observer.observe(el));
     };
+
+    // --- 실행 (Initial Check) ---
+    checkUnlockState();
 
 });
