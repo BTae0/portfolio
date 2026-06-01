@@ -27,12 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!CONFIG.IS_LOGIN_GATE_ACTIVE || isBypassUrl || isPreviouslyUnlocked) {
             gateContainer.classList.add('hidden');
             mainContent.classList.remove('hidden');
-            
+
             // 관리자 코드로 인증된 경우에만 하단 관리 버튼 노출
             if (isPreviouslyUnlocked) {
                 adminControls.classList.remove('hidden');
             }
-            
+
             initScrollObserver();
             renderProjects();
         }
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. 패스워드 입력 처리
     const unlockPortfolio = () => {
         const password = gateInput.value.trim();
-        
+
         if (password === 'power' || password === CONFIG.ADMIN_CODE) {
             // 관리자 코드일 경우 브라우저에 저장
             if (password === CONFIG.ADMIN_CODE) {
@@ -147,14 +147,36 @@ document.addEventListener('DOMContentLoaded', () => {
                     <li><strong>맞춤형 컨설팅</strong>: 각 팀의 페인포인트를 분석하여 15개 이상의 맞춤형 과제를 발굴 및 성공적인 실 상문화</li>
                 </ul>
 
-                <div class="notion-h3">3. 기술력 및 관리 역량</div>
+                <div class="notion-h3">3. 주요 자동화 프로세스 사례</div>
+                <div class="notion-table-wrap">
+                    <table class="notion-table">
+                        <thead>
+                            <tr>
+                                <th>과제 번호 & 과제명</th>
+                                <th>주요 내용 및 자동화 범위</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>R25006</strong><br>퇴사자 계정 초기화</td>
+                                <td>퇴사자 발생 시 M365 계정 권한 회수, 라이선스 해제, 메일 백업 및 계정 비활성화 단계를 자동 수행하여 정보 보안 강화</td>
+                            </tr>
+                            <tr>
+                                <td><strong>R26013</strong><br>외주업체 AS 대행료 정산</td>
+                                <td>외주 업체별 AS 대행 건수 및 정산 데이터를 ERP에서 수집하고, 단가 매핑 검증을 거쳐 최종 정산 보고서 자동 생성 및 메일 발송</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="notion-h3">4. 기술력 및 관리 역량</div>
                 <ul class="notion-ul">
                     <li><strong>ERP 통합</strong>: 사내 ERP 시스템과 SQL을 연동하여 데이터 정합성 보장 및 고도화된 자동화 리포팅 구현</li>
                     <li><strong>종합 보안 관리</strong>: RPA 운영뿐만 아니라 사용자 계정 관리 및 전사 보안 정책 수립/관리 병행</li>
                     <li><strong>통합 모니터링</strong>: 15개 프로세스의 에러 핸들링 및 실시간 모니터링 시스템 구축</li>
                 </ul>
 
-                <div class="notion-h3">4. 담당 역할 및 책임</div>
+                <div class="notion-h3">5. 담당 역할 및 책임</div>
                 <div class="notion-table-wrap">
                     <table class="notion-table">
                         <thead>
@@ -172,13 +194,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     </table>
                 </div>
 
-                <div class="notion-check-title"><i class='bx bxs-check-circle'></i> 결론 및 회고</div>
+                <div class="notion-check-title"><i class='bx bxs-check-circle'></i> 마무리 멘트</div>
                 <div class="notion-quote">
-                    단순한 개발자가 아닌, 한 기업의 기술 스택을 선택하고 문화를 만들어가는 **RPA Lead**로서의 역량을 발휘했습니다. 수작업이 당연시되던 환경에서 '자동화가 필수인 문화'로 변화시킨 점이 가장 큰 자산입니다.
+                    RPA Leader로서 자동화 문화 정착과 확산까지의 전 과정을 주도했습니다. 수작업 업무를 효율적인 자동화 프로세스로 전환하며, '일하는 방식의 변화'를 이끌어낸 이 경험은 앞으로 어떤 조직에서도 지속 가능한 효율성을 만들어낼 동력이 될 것입니다.
                 </div>
             </div>
             `,
-            files: [],
+            files: [
+                'R25006_퇴사자 계정 초기화_사용자 메뉴얼.pptx',
+                'R25006_퇴사자 계정 초기화_프로세스정의서.pptx',
+                'R26013_외주업체 AS 대행료 정산_사용자 메뉴얼.pptx',
+                'R26013_외주업체 AS 대행료 정산_프로세스 정의서.pptx',
+                'RPA 교육 자료.zip',
+                'Graph API 토큰 생성.docx',
+                'PAD DB2 연결 방법.docx'
+            ],
             screenshots: [],
             startDate: '2025-10-01',
             endDate: '2026-12-31'
