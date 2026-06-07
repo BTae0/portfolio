@@ -82,15 +82,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectsData = [
         {
             id: 'rpa-0', type: 'rpa',
-            shortTitle: '로얄앤컴퍼니 RPA 시스템 구축 및 운영', color: '#6c5ce7', icon: 'bx bxs-institution',
+            shortTitle: 'R사 욕실 제조 업체 RPA 시스템 구축 및 운영', color: '#6c5ce7', icon: 'bx bxs-institution',
             bullet1: 'RPA 전사 도입 및 거버넌스 수립', bullet2: '15개 프로세스 개발 및 100% 사내 운영',
-            title: 'RPA 시스템 인프라 구축 및 전사 확산 리딩', company: '로얄앤컴퍼니', duration: '2025.10 ~ 현재',
+            title: 'RPA 시스템 인프라 구축 및 전사 확산 리딩', company: 'R사 욕실 제조 업체', duration: '2025.10 ~ 현재',
             role: 'RPA Lead / Administrator (도입, 개발, 교육, 운영 총괄)', tech: ['Power Automate', 'Teams (Shared Channels)', 'OneDrive', 'SQL (ERP 연동)', 'M365 Admin'],
             achievements: '사내 최초 RPA 도입 후 전 부서 확산 완료. 15개 과제 운영 및 전사 교육 실시.',
-            desc: '로얄앤컴퍼니 최초의 RPA 담당자로 합류하여, RPA 인프라 구축부터 전사 프로젝트 발굴, 교육 및 운영까지 전 과정을 리딩하며 사내 디지털 전환(DX) 문화를 정착시켰습니다.',
+            desc: 'R사 욕실 제조 업체 최초의 RPA 담당자로 합류하여, RPA 인프라 구축부터 전사 프로젝트 발굴, 교육 및 운영까지 전 과정을 리딩하며 사내 디지털 전환(DX) 문화를 정착시켰습니다.',
             customHTML: `
             <div class="modal-article" style="padding: 1.5rem;">
-                <div class="notion-h2">로얄앤컴퍼니 RPA 시스템 구축 및 전사 확산 리딩</div>
+                <div class="notion-h2">R사 욕실 제조 업체 RPA 시스템 구축 및 전사 확산 리딩</div>
                 
                 <!-- 상단 핵심 성과 지표 -->
                 <div class="notion-metrics-grid">
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <i class='bx bxs-bolt-circle' style="color: #feca57;"></i>
                     <div class="notion-callout-text">
                         <strong>"RPA 도입 전무 상태에서 DX 문화 정착까지"</strong><br>
-                        로얄앤컴퍼니 입사 후, 수작업 위주의 비효율적인 업무 환경을 개선하기 위해 독자적으로 RPA 인프라를 설계하고 구축했습니다. 현재는 15개 이상의 과제를 성공적으로 안착시키며 전사적인 생산성 향상을 주도하고 있습니다.
+                        R사 욕실 제조 업체 입사 후, 수작업 위주의 비효율적인 업무 환경을 개선하기 위해 독자적으로 RPA 인프라를 설계하고 구축했습니다. 현재는 15개 이상의 과제를 성공적으로 안착시키며 전사적인 생산성 향상을 주도하고 있습니다.
                     </div>
                 </div>
 
@@ -215,16 +215,16 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'rpa-1', type: 'rpa',
-            shortTitle: '롯데 하이마트 RPA 유지보수/개발', color: '#6c5ce7', icon: 'bx bxs-save',
-            bullet1: '프로젝트명: 롯데 하이마트...', bullet2: '주요 업무: 온라인 가격 조사 자동화...',
-            title: '롯데 하이마트 RPA 유지보수/개발', company: '롯데 하이마트 / 덱스컨설팅', duration: '2024.01 ~ 2025.10 (22개월)',
+            shortTitle: 'L사 전자제품 유통 계열사 RPA 유지보수/개발', color: '#6c5ce7', icon: 'bx bxs-save',
+            bullet1: '프로젝트명: L사 전자제품 유통 계열사...', bullet2: '주요 업무: 온라인 가격 조사 자동화...',
+            title: 'L사 전자제품 유통 계열사 RPA 유지보수/개발', company: 'L사 전자제품 유통 계열사 / 덱스컨설팅', duration: '2024.01 ~ 2025.10 (22개월)',
             role: '유지보수 고도화 프로젝트 PL / 개발 및 운영 총괄',
             tech: ['Power Automate', 'Outlook', 'FTP', 'SAP', 'SQL', 'VBScript'],
             achievements: '80여개 RPA 과제의 안정성 98% 유지 및 신규 과제 개발 완료',
             desc: '네이버 가격비교 사이트에서 약 2,000건의 제품 데이터를 수집 및 정제하는 프로세스를 자동화하여 수작업 기준 16시간 소요되던 업무를 5시간으로 단축했습니다. 체계적인 유지보수 및 개발 프로세스를 구축하여 시스템 대응 시간을 단축하고 업무 시간을 절감했습니다.<br><br><strong>[주요 프로세스]</strong><br>- 온라인 가격 조사<br>- 전기료 자동이체 (SAP 연동)<br>- 매입/매출 세금계산서 관리<br>- 인증정보검수 자동화<br><br><strong>[문제 해결]</strong><br>온라인 가격 조사 사이트 업데이트로 인한 30%의 성공률 저하 문제를 VM 증설(4대->6대) 및 과제 리뉴얼을 통해 해결했습니다.',
             customHTML: `
             <div class="modal-article" style="padding: 1.5rem;">
-                <div class="notion-h2">롯데 하이마트 RPA 유지보수/개발</div>
+                <div class="notion-h2">L사 전자제품 유통 계열사 RPA 유지보수/개발</div>
                 
                 <!-- 상단 핵심 성과 지표 -->
                 <div class="notion-metrics-grid">
@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="notion-callout">
                     <i class='bx bxs-info-circle'></i>
                     <div class="notion-callout-text">
-                        롯데 하이마트 전사의 80여 개 RPA 프로세스를 안정적으로 운영하고, 시스템 업데이트 및 비즈니스 로직 변경에 따른 고도화와 신규 프로세스 개발을 총괄했습니다.
+                        L사 전자제품 유통 계열사 전사의 80여 개 RPA 프로세스를 안정적으로 운영하고, 시스템 업데이트 및 비즈니스 로직 변경에 따른 고도화와 신규 프로세스 개발을 총괄했습니다.
                     </div>
                 </div>
 
@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <ul class="notion-ul">
                     <li>RPA 운영 및 개발 총괄 리딩 (Communication & Management)</li>
                     <li>기존 80여 개 프로세스 유지보수 및 안정성 관리)</li>
-                    <li>하이마트 전사 RPA 프로세스 고도화 및 신규 과제 개발</li>
+                    <li>L사 전자제품 유통 계열사 전사 RPA 프로세스 고도화 및 신규 과제 개발</li>
                     <li>현업 담당자 대상 Microsoft Power Automate 기술 교육 지원</li>
                 </ul>
 
@@ -364,15 +364,15 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'rpa-2', type: 'rpa',
-            shortTitle: 'GS Retail 담배소매인 고시공고 자동 수집 RPA', color: '#6c5ce7', icon: 'bx bxs-save',
-            bullet1: '프로젝트명: GS Retail...', bullet2: '담배 고시공고 데이터 수집 (90% 단축)',
-            title: 'GS리테일 담배소매인 고시공고 자동 수집 RPA', company: 'GS리테일 / 덱스컨설팅', duration: '2023.07 ~ 2023.09 (2개월)',
+            shortTitle: 'G사 대형 유통 계열사 담배소매인 고시공고 자동 수집 RPA', color: '#6c5ce7', icon: 'bx bxs-save',
+            bullet1: '프로젝트명: G사 대형 유통 계열사...', bullet2: '담배 고시공고 데이터 수집 (90% 단축)',
+            title: 'G사 대형 유통 계열사 담배소매인 고시공고 자동 수집 RPA', company: 'G사 대형 유통 계열사 / 덱스컨설팅', duration: '2023.07 ~ 2023.09 (2개월)',
             role: 'RPA 프로세스 개발, Web 크롤링 로직 설계', tech: ['Power Automate Desktop', 'VBScript', 'Web 크롤링', 'SQL', 'HTML', 'Outlook'],
             achievements: '담배 고시/공고 데이터 수집 시간 90% 단축 달성.',
             desc: '전국 250여 개 지자체 사이트에 분산된 담배소매인 지정 고시/공고 데이터를 자동으로 수집, 정제하여 담당 팀별로 알림을 발송하는 시스템을 구축했습니다. 지자체별 상이한 웹 구조를 극복하기 위해 계층형 검색 엔진 아키텍처를 도입했습니다.',
             customHTML: `
             <div class="modal-article" style="padding: 1.5rem;">
-                <div class="notion-h2">GS Retail 담배소매인 지정 고시공고 자동 수집 RPA</div>
+                <div class="notion-h2">G사 대형 유통 계열사 담배소매인 지정 고시공고 자동 수집 RPA</div>
                 
                 <!-- 상단 핵심 성과 지표 -->
                 <div class="notion-metrics-grid">
@@ -412,7 +412,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="notion-callout">
                     <i class='bx bxs-info-circle'></i>
                     <div class="notion-callout-text">
-                        GS리테일의 전국 250여 개 지자체 사이트에 분산된 담배소매인 지정 고시/공고 데이터를 자동으로 수집, 정제하여 담당 팀별로 알림을 발송하는 RPA 시스템을 구축했습니다.
+                        G사 대형 유통 계열사의 전국 250여 개 지자체 사이트에 분산된 담배소매인 지정 고시/공고 데이터를 자동으로 수집, 정제하여 담당 팀별로 알림을 발송하는 RPA 시스템을 구축했습니다.
                     </div>
                 </div>
 
@@ -485,10 +485,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             `,
             files: [
-                'GS리테일 담배소매인 고시공고 프로세스 정의서.pptx',
-                '20231108_1지역 개발팀_결과파일.xlsx',
-                '20231108_2지역 개발팀_결과파일.xlsx',
-                '20231108_4지역 광역_결과파일.xlsx'
+                'G사_담배소매인 고시공고 프로세스 정의서.pptx'
             ],
             screenshots: [],
             startDate: '2023-07-01',
@@ -496,15 +493,15 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'rpa-3', type: 'rpa',
-            shortTitle: '게스코리아 2차 RPA 시스템 구축 및 기업교육', color: '#6c5ce7', icon: 'bx bxs-save',
-            bullet1: '프로젝트명: 게스코리아...', bullet2: 'HR 근태 관리 자동화 (80% 단축)',
-            title: '게스코리아 2차 RPA 시스템 구축 및 기업교육', company: '게스코리아 / 덱스컨설팅', duration: '2023.07 ~ 2023.09 (2개월)',
+            shortTitle: 'GU사 글로벌 패션 브랜드 한국 법인 2차 RPA 시스템 구축 및 기업교육', color: '#6c5ce7', icon: 'bx bxs-save',
+            bullet1: '프로젝트명: GU사 글로벌 패션 브랜드 한국 법인...', bullet2: 'HR 근태 관리 자동화 (80% 단축)',
+            title: 'GU사 글로벌 패션 브랜드 한국 법인 2차 RPA 시스템 구축 및 기업교육', company: 'GU사 글로벌 패션 브랜드 한국 법인 / 덱스컨설팅', duration: '2023.07 ~ 2023.09 (2개월)',
             role: 'RPA 프로세스 설계 및 개발, 기업 교육 강사', tech: ['Power Automate Desktop', 'Shiftee 연동', 'SQL', 'VBScript', 'Outlook', 'Excel'],
             achievements: '근무 일정 관리 및 미준수자 선별 업무 시간 80% 단축.',
             desc: '게스코리아 HR팀의 근태 관리 효율성을 높이기 위해, Shiftee 시스템 데이터를 기반으로 한 5개의 자동화 프로세스를 구축하고 현업 담당자 대상 RPA 실무 교육을 병행했습니다.',
             customHTML: `
             <div class="modal-article" style="padding: 1.5rem;">
-                <div class="notion-h2">게스코리아 2차 RPA 시스템 구축 및 기업교육</div>
+                <div class="notion-h2">GU사 글로벌 패션 브랜드 한국 법인 2차 RPA 시스템 구축 및 기업교육</div>
                 
                 <!-- 상단 핵심 성과 지표 -->
                 <div class="notion-metrics-grid">
@@ -544,7 +541,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="notion-callout">
                     <i class='bx bxs-info-circle'></i>
                     <div class="notion-callout-text">
-                        게스코리아 HR팀의 근태 관리 효율성을 높이기 위해, Shiftee 시스템 데이터를 기반으로 한 5개의 자동화 프로세스를 구축하고 현업 담당자 대상 RPA 실무 교육을 병행했습니다.
+                        GU사 글로벌 패션 브랜드 한국 법인 HR팀의 근태 관리 효율성을 높이기 위해, Shiftee 시스템 데이터를 기반으로 한 5개의 자동화 프로세스를 구축하고 현업 담당자 대상 RPA 실무 교육을 병행했습니다.
                     </div>
                 </div>
 
@@ -617,10 +614,9 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             `,
             files: [
-                'GUESS 2차 RPA 시스템 구축 완료보고.pdf',
-                'Guesskorea_HR05_STM-1 사용자 근무일정 확인_운영 매뉴얼.pptx',
-                'Guesskorea_HR06_STM-2 사용자 근무일정 확인_운영 매뉴얼.pptx',
-                'Guesskorea_HR07_TGIF 근무일정 확인_운영 매뉴얼_v0.1.pptx'
+                'GU사_HR05_STM-1 사용자 근무일정 확인_운영 매뉴얼.pptx',
+                'GU사_HR06_STM-2 사용자 근무일정 확인_운영 매뉴얼.pptx',
+                'GU사_HR07_TGIF 근무일정 확인_운영 매뉴얼_v0.1.pptx'
             ],
             screenshots: [],
             startDate: '2023-07-01',
@@ -628,15 +624,15 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'app-1', type: 'app',
-            shortTitle: '이마트 Power Apps 개발', color: '#00b894', icon: 'bx bxs-save',
-            bullet1: '프로젝트명: 이마트 Power Apps...', bullet2: '상품권 신청 자동화 시스템',
-            title: '이마트 Power Apps 개발', company: '이마트 / 덱스컨설팅', duration: '2023.11 ~ 2024.01 (3개월)',
+            shortTitle: 'E사 대형 마트 유통사 Power Apps 개발', color: '#00b894', icon: 'bx bxs-save',
+            bullet1: '프로젝트명: E사 대형 마트 유통사 Power Apps...', bullet2: '상품권 신청 자동화 시스템',
+            title: 'E사 대형 마트 유통사 Power Apps 개발', company: 'E사 대형 마트 유통사 / 덱스컨설팅', duration: '2023.11 ~ 2024.01 (3개월)',
             role: 'Power Apps 앱 설계 및 개발, DB 구성, Power Automate 설계/개발, Forms 연동', tech: ['Power Apps', 'Power Automate', 'Forms', 'Outlook', 'SharePoint'],
             achievements: '고객사별 상품권 판매 신청 관리 및 안내 메일 발송 자동화로 업무 시간 40% 단축.',
             desc: 'Microsoft Forms와 Power Apps를 연동하여 상품권 구매 신청, 판매 데이터, 현황 데이터를 실시간 통합 관리하는 앱을 개발했습니다. 자동 알림 시스템으로 재고 관리 효율성을 높여 지급 누락을 방지하고 관리자의 업무 부담을 대폭 감소시켰습니다.',
             customHTML: `
             <div class="modal-article" style="padding: 1.5rem;">
-                <div class="notion-h2">이마트 Power Apps 개발</div>
+                <div class="notion-h2">E사 대형 마트 유통사 Power Apps 개발</div>
 
                 <!-- 상단 핵심 성과 지표 -->
                 <div class="notion-metrics-grid">
@@ -676,7 +672,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="notion-callout">
                     <i class='bx bxs-info-circle'></i>
                     <div class="notion-callout-text">
-                        이마트 고객사(포스코이앤씨 소속 협력사)의 원활한 Microsoft 라이선스 및 상품권 구매 관리를 위해, Forms와 Power Apps, Power Automate를 연동하여 신청 접수부터 승인/반려, 자동 메일 발송까지 모든 과정을 통합하는 자동화 환경을 구축했습니다.
+                        E사 대형 마트 유통사 고객사(P사 건설·엔지니어링 계열사 소속 협력사)의 원활한 Microsoft 라이선스 및 상품권 구매 관리를 위해, Forms와 Power Apps, Power Automate를 연동하여 신청 접수부터 승인/반려, 자동 메일 발송까지 모든 과정을 통합하는 자동화 환경을 구축했습니다.
                     </div>
                 </div>
 
@@ -758,7 +754,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             `,
             files: [
-                '이마트 Power Apps 프로세스 정의서.pptx'
+                'E사_Power Apps 프로세스 정의서.pptx'
             ],
             screenshots: [
                 { url: 'images/app-1/1.png', caption: '상품권 입금 확인 자동 알림 메일' },
@@ -771,15 +767,15 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'app-2', type: 'app',
-            shortTitle: '포스코이앤씨 Power Apps 개발', color: '#00b894', icon: 'bx bxs-save',
-            bullet1: '프로젝트명: 포스코이앤씨...', bullet2: '협력사 라이선스 관리 앱 개발',
-            title: '포스코이앤씨 라이선스 통합 관리 앱', company: '포스코이앤씨 / 덱스컨설팅', duration: '2023.11 ~ 2024.01 (3개월)',
+            shortTitle: 'P사 건설·엔지니어링 계열사 Power Apps 개발', color: '#00b894', icon: 'bx bxs-save',
+            bullet1: '프로젝트명: P사 건설·엔지니어링 계열사...', bullet2: '협력사 라이선스 관리 앱 개발',
+            title: 'P사 건설·엔지니어링 계열사 라이선스 통합 관리 앱', company: 'P사 건설·엔지니어링 계열사 / 덱스컨설팅', duration: '2023.11 ~ 2024.01 (3개월)',
             role: '프로젝트 PL, 앱 설계 및 개발, DB 구성, Azure AD 그룹 개발, 교육', tech: ['Power Apps', 'Power Automate', 'Azure AD', 'Teams', 'SharePoint'],
             achievements: '협력사 라이선스 관리 시간 75% 단축, 잉여 협력사 라이선스 회수율 70% 증가.',
             desc: '기존 3개 프로그램으로 관리되던 협력사 계정 및 라이선스를 Power Apps 하나로 통합했습니다. 협력사 계정 리스트(CRUD) 관리가 가능한 앱을 개발하고, 기초부터 운영 단계까지 고객사 사용자를 위한 메인 강사로 교육을 진행했습니다.',
             customHTML: `
             <div class="modal-article" style="padding: 1.5rem;">
-                <div class="notion-h2">포스코이앤씨 협력사 라이선스 관리 앱</div>
+                <div class="notion-h2">P사 건설·엔지니어링 계열사 협력사 라이선스 관리 앱</div>
                 
                 <!-- 상단 핵심 성과 지표 -->
                 <div class="notion-metrics-grid">
@@ -819,7 +815,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="notion-callout">
                     <i class='bx bxs-info-circle'></i>
                     <div class="notion-callout-text">
-                        포스코이앤씨 소속 협력사의 방대한 Microsoft 계정 및 라이선스를 효율적으로 관리하기 위해, 기존 3개의 파편화된 프로그램을 통폐합한 단일 Power Apps 애플리케이션을 성공적으로 구축했습니다.
+                        P사 건설·엔지니어링 계열사 소속 협력사의 방대한 Microsoft 계정 및 라이선스를 효율적으로 관리하기 위해, 기존 3개의 파편화된 프로그램을 통폐합한 단일 Power Apps 애플리케이션을 성공적으로 구축했습니다.
                     </div>
                 </div>
 
@@ -885,7 +881,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
 
                 <div class="notion-quote">
-                    협력사 계정이 '게스트' 유형으로 등록되어 있어, 정책 상 일정 시간이 지나면 자동으로 Azure 그룹에서 제거되는 위험이 있었습니다. 고객사는 보안을 위해 게스트에게 상위 권한 부여를 원치 않았습니다.<br><br>
+                    협력사 계정이 '게스트' 유형으로 등록되어 있어, 정책 상 일정 시간이 지나면 자동으로 Azure 그룹에서 제거되는 위험이 있었습니다. P사 건설·엔지니어링 계열사는 보안을 위해 게스트에게 상위 권한 부여를 원치 않았습니다.<br><br>
                     <strong>→ 해결 방법</strong>: 직접적인 시스템 권한 할당 대신 커스텀 API를 호출하여 Azure/M365 관리 센터 정보를 연동한 뒤, Power Automate 커스텀 루프를 통해 작업을 수행하는 시점에만 사용자 유형을 한시적으로 '구성원'으로 전환시켜 작업을 완료하는 방식의 우회 아키텍처를 도입했습니다.
                 </div>
 
@@ -927,11 +923,8 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             `,
             files: [
-                '요구사항명세서.docx',
-                '포스코이앤씨_사용자 매뉴얼.pptx',
-                '포스코이앤씨_운영자 매뉴얼.pptx',
-                '포스코이앤씨_통합 테스트 결과서.docx',
-                '포스코이앤씨_화면 정의서.pptx'
+                'P사_사용자 매뉴얼.pptx',
+                'P사_화면 정의서.pptx'
             ],
             screenshots: [
                 { url: 'images/app-2/1-1.조회 및 신청.png', caption: '라이선스 조회 및 신청 화면' },
@@ -955,7 +948,7 @@ document.addEventListener('DOMContentLoaded', () => {
             customHTML: `
 
             <div class="modal-article" style="padding: 1.5rem;">
-                <div class="notion-h2">롯데 하이마트 RPA 유지보수/개발</div>
+                <div class="notion-h2">L사 전자제품 유통 계열사 RPA 유지보수/개발</div>
                 
                 <!-- 상단 핵심 성과 지표 -->
                 <div class="notion-metrics-grid">
@@ -995,7 +988,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="notion-callout">
                     <i class='bx bxs-info-circle'></i>
                     <div class="notion-callout-text">
-                        롯데 하이마트 전사의 80여 개 RPA 프로세스를 안정적으로 운영하고, 시스템 업데이트 및 비즈니스 로직 변경에 따른 고도화와 신규 프로세스 개발을 총괄했습니다.
+                        L사 전자제품 유통 계열사 전사의 80여 개 RPA 프로세스를 안정적으로 운영하고, 시스템 업데이트 및 비즈니스 로직 변경에 따른 고도화와 신규 프로세스 개발을 총괄했습니다.
                     </div>
                 </div>
 
@@ -1004,7 +997,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <ul class="notion-ul">
                     <li>RPA 운영 및 개발 총괄 리딩 (Communication & Management)</li>
                     <li>기존 80여 개 프로세스 유지보수 및 안정성 관리)</li>
-                    <li>하이마트 전사 RPA 프로세스 고도화 및 신규 과제 개발</li>
+                    <li>L사 전자제품 유통 계열사 전사 RPA 프로세스 고도화 및 신규 과제 개발</li>
                     <li>현업 담당자 대상 Microsoft Power Automate 기술 교육 지원</li>
                 </ul>
 
