@@ -409,7 +409,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             `,
             files: [
-                'G사_담배소매인 고시공고 프로세스 정의서.pptx'
+                'GS리테일 담배소매인 고시공고 프로세스 정의서.pptx'
             ],
             screenshots: [],
             startDate: '2023-07-01',
@@ -538,9 +538,9 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             `,
             files: [
-                'GU사_HR05_STM-1 사용자 근무일정 확인_운영 매뉴얼.pptx',
-                'GU사_HR06_STM-2 사용자 근무일정 확인_운영 매뉴얼.pptx',
-                'GU사_HR07_TGIF 근무일정 확인_운영 매뉴얼_v0.1.pptx'
+                'Guesskorea_HR05_STM-1 사용자 근무일정 확인_운영 매뉴얼.pptx',
+                'Guesskorea_HR06_STM-2 사용자 근무일정 확인_운영 매뉴얼.pptx',
+                'Guesskorea_HR07_TGIF 근무일정 확인_운영 매뉴얼_v0.1.pptx'
             ],
             screenshots: [],
             startDate: '2023-07-01',
@@ -678,7 +678,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             `,
             files: [
-                'E사_Power Apps 프로세스 정의서.pptx'
+                '이마트 Power Apps 프로세스 정의서.pptx'
             ],
             screenshots: [
                 { url: 'images/app-1/1.png', caption: '상품권 입금 확인 자동 알림 메일' },
@@ -847,8 +847,8 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             `,
             files: [
-                'P사_사용자 매뉴얼.pptx',
-                'P사_화면 정의서.pptx'
+                '포스코이앤씨_사용자 매뉴얼.pptx',
+                '포스코이앤씨_화면 정의서.pptx'
             ],
             screenshots: [
                 { url: 'images/app-2/1-1.조회 및 신청.png', caption: '라이선스 조회 및 신청 화면' },
