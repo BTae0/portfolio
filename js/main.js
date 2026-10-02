@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 포트폴리오 관리자 설정 (CONFIG) ---
     const CONFIG = {
-        IS_LOGIN_GATE_ACTIVE: true,   // true: 로그인 필수, false: 전체 공개
+        IS_LOGIN_GATE_ACTIVE: false,  // true: 로그인 필수, false: 전체 공개
         ADMIN_CODE: 'adminbae',       // 관리자 영구 패스 코드
         BYPASS_QUERY: 'mode',         // 바이패스 URL 쿼리 (예: ?mode=open)
         BYPASS_VALUE: 'open'          // 바이패스 값
