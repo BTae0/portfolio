@@ -82,29 +82,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectsData = [
         {
             id: 'rpa-0', type: 'rpa',
-            shortTitle: 'R사 욕실 제조 업체 RPA 시스템 구축 및 운영', color: '#6c5ce7', icon: 'bx bxs-institution',
-            bullet1: 'RPA 전사 도입 및 거버넌스 수립', bullet2: '15개 프로세스 개발 및 100% 사내 운영',
+            shortTitle: 'R사 욕실 제조 업체 RPA 시스템 구축 및 전사 운영', color: '#6c5ce7', icon: 'bx bxs-institution',
+            bullet1: '사내 최초 RPA 도입 · 11개 부서 확산', bullet2: '19개 과제(23개 플로우) 직접 운영 · 신규/고도화 18건 완료',
             title: 'RPA 시스템 인프라 구축 및 전사 확산 리딩', company: 'R사 욕실 제조 업체', duration: '2025.10 ~ 현재',
-            role: 'RPA Lead / Administrator (도입, 개발, 교육, 운영 총괄)', tech: ['Power Automate', 'Teams (Shared Channels)', 'OneDrive', 'SQL (ERP 연동)', 'M365 Admin'],
-            achievements: '사내 최초 RPA 도입 후 전 부서 확산 완료. 15개 과제 운영 및 전사 교육 실시.',
-            desc: 'R사 욕실 제조 업체 최초의 RPA 담당자로 합류하여, RPA 인프라 구축부터 전사 프로젝트 발굴, 교육 및 운영까지 전 과정을 리딩하며 사내 디지털 전환(DX) 문화를 정착시켰습니다.',
+            role: 'RPA Lead / Administrator (도입, 개발, 교육, 운영 총괄)', tech: ['Power Automate Desktop', 'Power Automate Cloud Flow', 'Microsoft Graph API', 'Teams / SharePoint / Forms', 'SQL · AS/400 (기간계 연동)', 'M365 Admin'],
+            achievements: '사내 최초 RPA 도입 후 11개 부서로 확산. 19개 과제(23개 플로우) 상시 운영, 신규·고도화 18건 직접 개발, 과제별 프로세스 정의서·사용자 매뉴얼 표준화.',
+            desc: 'R사 욕실 제조 업체 최초의 RPA 담당자로 합류하여, RPA 인프라 구축부터 현업 과제 발굴, 개발, 교육, 운영, 문서화까지 전 과정을 리딩하며 사내 디지털 전환(DX) 문화를 정착시켰습니다.',
             customHTML: `
             <div class="modal-article" style="padding: 1.5rem;">
                 <div class="notion-h2">R사 욕실 제조 업체 RPA 시스템 구축 및 전사 확산 리딩</div>
-                
-                <!-- 상단 핵심 성과 지표 -->
+
+                <!-- 상단 핵심 성과 지표 (RPA 업무자동화 통합관리대장 기준, 2026.10 현재) -->
                 <div class="notion-metrics-grid">
                     <div class="metric-card">
                         <span class="metric-value">From Zero</span>
                         <span class="metric-label">사내 최초 RPA 도입/구축</span>
                     </div>
                     <div class="metric-card">
-                        <span class="metric-value">15개+</span>
-                        <span class="metric-label">자동화 프로세스 운영 중</span>
+                        <span class="metric-value">19개 과제</span>
+                        <span class="metric-label">상시 운영 중 (23개 플로우)</span>
                     </div>
                     <div class="metric-card">
-                        <span class="metric-value">전 부서</span>
-                        <span class="metric-label">사내 교육 및 컨설팅 완료</span>
+                        <span class="metric-value">11개 부서</span>
+                        <span class="metric-label">현업 자동화 적용</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-value">18건</span>
+                        <span class="metric-label">신규 13 · 고도화 5 직접 완료</span>
                     </div>
                 </div>
 
@@ -116,10 +120,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     <tr>
                         <td class="prop-label"><i class='bx bxs-tag-alt'></i> Tags</td>
                         <td class="prop-value">
-                            <span class="m-tag" style="background: rgba(131, 56, 236, 0.2); color: #cba6f7;">Power Automate</span>
+                            <span class="m-tag" style="background: rgba(131, 56, 236, 0.2); color: #cba6f7;">Power Automate Desktop</span>
+                            <span class="m-tag" style="background: rgba(131, 56, 236, 0.2); color: #cba6f7;">Cloud Flow</span>
+                            <span class="m-tag">Microsoft Graph API</span>
                             <span class="m-tag">Teams</span>
-                            <span class="m-tag">OneDrive</span>
-                            <span class="m-tag" style="background: rgba(225, 112, 85, 0.2); color: #fab1a0;">SQL (ERP)</span>
+                            <span class="m-tag">SharePoint</span>
+                            <span class="m-tag">Forms</span>
+                            <span class="m-tag" style="background: rgba(225, 112, 85, 0.2); color: #fab1a0;">SQL · AS/400</span>
                             <span class="m-tag">Security Admin</span>
                         </td>
                     </tr>
@@ -129,54 +136,90 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="notion-callout">
                     <i class='bx bxs-bolt-circle' style="color: #feca57;"></i>
                     <div class="notion-callout-text">
-                        <strong>"RPA 도입 전무 상태에서 DX 문화 정착까지"</strong><br>
-                        R사 욕실 제조 업체 입사 후, 수작업 위주의 비효율적인 업무 환경을 개선하기 위해 독자적으로 RPA 인프라를 설계하고 구축했습니다. 현재는 15개 이상의 과제를 성공적으로 안착시키며 전사적인 생산성 향상을 주도하고 있습니다.
+                        <strong>"RPA 도입 전무 상태에서 전사 운영 체계 정립까지"</strong><br>
+                        입사 시점에 RPA 인프라, 운영 계정, 문서 체계가 전혀 없는 상태에서 시작했습니다. 수작업 위주의 반복 업무를 부서별로 발굴해 자동화하고, 현재는 19개 과제를 정해진 주기에 맞춰 상시 운영하며 운영·개발·문서화·교육을 단독으로 담당하고 있습니다.
                     </div>
                 </div>
 
                 <div class="notion-h3">2. 주요 성과 및 거버넌스 수립</div>
+                <div class="notion-emoji-title">🧱 운영 표준화</div>
+                <ul class="notion-ul">
+                    <li><strong>RPA 전용 실행 계정 분리</strong>: 개인 계정이 아닌 RPA 전용 서비스 계정으로 전 과제를 실행하여, 담당자 변동·퇴사와 무관하게 과제가 중단되지 않도록 설계</li>
+                    <li><strong>공통 프레임워크</strong>: 화면 해상도 표준화·잔여 프로세스 정리 등 공통 모듈, 로그, 시작/종료 알림을 모든 Desktop 과제에 동일 적용</li>
+                    <li><strong>예외처리·재시도 표준</strong>: 개별 액션 3회 재시도, 업무 블록 단위 재시도, 누적 오류 임계치 초과 시 실패 알림 후 강제 종료 규칙을 공통 적용</li>
+                    <li><strong>통합관리대장</strong>: 운영 리스트(주기·방식·운영자·미운영 사유)와 개발 리스트(요청~완료 일정·진척률)를 하나의 대장으로 관리</li>
+                </ul>
+
                 <div class="notion-emoji-title">💬 Teams 기반의 실시간 협업 체계 구축</div>
                 <ul class="notion-ul">
-                    <li><strong>공유 채널 활용</strong>: RPA 프로세스별 Teams 전용 채널을 구축하여 담당자와 1:1 실시간 소통 및 피드백 루프 생성</li>
-                    <li><strong>문서 중앙 관리</strong>: OneDrive를 활용해 모든 템플릿, 결과 로그, 개발 문서를 중앙화하여 보안과 효율 동시 확보</li>
+                    <li><strong>공유 채널 활용</strong>: 과제별 Teams 채널을 구성해 담당자와 실행 결과·오류를 즉시 공유하고 개선 요청을 받는 피드백 루프 생성</li>
+                    <li><strong>문서 중앙 관리</strong>: SharePoint/OneDrive에 입력 양식, 결과 파일, 개발 문서를 중앙화하여 보안과 접근성을 동시에 확보</li>
                 </ul>
 
-                <div class="notion-emoji-title">🎓 전사적 DX 교육 및 컨설팅 리딩</div>
+                <div class="notion-emoji-title">📄 문서화 체계</div>
                 <ul class="notion-ul">
-                    <li><strong>교육 프로그램 운영</strong>: 전 부서를 대상으로 RPA 활용 교육을 직접 설계하고 진행하여 Citizen Developer 환경 조성</li>
-                    <li><strong>맞춤형 컨설팅</strong>: 각 팀의 페인포인트를 분석하여 15개 이상의 맞춤형 과제를 발굴 및 성공적인 실 상문화</li>
+                    <li><strong>과제별 2종 문서 표준</strong>: 프로세스 정의서(개요 · 실행 트리거 · 연결/모듈 · 흐름도 · 상세 로직)와 사용자 매뉴얼(개요 · 사용 절차 · FAQ · 개정 이력)을 각각 23종 작성</li>
+                    <li><strong>소스 기반 검증</strong>: 문서는 Flow 정의를 직접 읽고 작성하며, 기존 자동 초안의 오류(입력/이력 파일 혼동 등)를 바로잡는 방식으로 정확도 관리</li>
+                    <li><strong>보안 규칙</strong>: 문서 내 접속 정보·비밀번호는 마스킹하고, 사내 정보 공유 주의 문구를 하단에 고정</li>
                 </ul>
 
-                <div class="notion-h3">3. 주요 자동화 프로세스 사례</div>
+                <div class="notion-emoji-title">🎓 교육 및 컨설팅</div>
+                <ul class="notion-ul">
+                    <li><strong>RPA 교육 자료 제작</strong>: 사내 RPA 교육 자료와 Graph API 토큰 발급·PAD DB 연결 가이드를 직접 제작</li>
+                    <li><strong>과제 발굴 컨설팅</strong>: 15개 부서로부터 요청 접수 후 타당성을 검토, 효과 대비 구현 난이도가 맞지 않는 건은 취소/보류로 관리</li>
+                </ul>
+
+                <div class="notion-h3">3. 운영 중인 자동화 과제 (영역별)</div>
                 <div class="notion-table-wrap">
                     <table class="notion-table">
                         <thead>
                             <tr>
-                                <th>과제 번호 & 과제명</th>
-                                <th>주요 내용 및 자동화 범위</th>
+                                <th>영역</th>
+                                <th>대표 과제</th>
+                                <th>자동화 범위</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>R25006</strong><br>퇴사자 계정 초기화</td>
-                                <td>퇴사자 발생 시 M365 계정 권한 회수, 라이선스 해제, 메일 백업 및 계정 비활성화 단계를 자동 수행하여 정보 보안 강화</td>
+                                <td><strong>품질·인증</strong></td>
+                                <td>R25001 인증기관 제개정 모니터링<br>R26010 환경표지 인증 만료일 알림<br>R26022 출고 정지/해제 알림</td>
+                                <td>8개 인증·표준 기관 사이트를 매주 순회해 신규 공지만 수집·기록하고 Teams로 전파. 인증 만료 120/110/100/90일 전 단계별 알림으로 갱신 누락 방지</td>
                             </tr>
                             <tr>
-                                <td><strong>R26013</strong><br>외주업체 AS 대행료 정산</td>
-                                <td>외주 업체별 AS 대행 건수 및 정산 데이터를 ERP에서 수집하고, 단가 매핑 검증을 거쳐 최종 정산 보고서 자동 생성 및 메일 발송</td>
+                                <td><strong>영업·채권·재무</strong></td>
+                                <td>R25005 자사몰 매출 판매현황<br>R25008 수금대비 미수금 사전통보<br>R26012 채권마감현황 대상업체 선별<br>R26017 판매실적 데이터 수집<br>R26023 보증보험 만료일 알림</td>
+                                <td>기간계(AS/400)·자사몰·수금통장·PG 정산 데이터를 주문/승인번호 기준으로 매칭해 분기 정산 파일 생성. 월말 미수금 현황 자동 공유. 장기연체·담보초과 채권을 전월 대비 신규/정상화로 분류</td>
+                            </tr>
+                            <tr>
+                                <td><strong>가격·CX</strong></td>
+                                <td>R25007 네이버 가격비교 모니터링/종합<br>R26015 기준가 미준수 업체 모니터링<br>R26013 외주업체 AS 대행료 정산<br>R26016 미처리건 알림톡 발송</td>
+                                <td>제품·부품 판매가를 기준가와 비교해 미준수 업체 선별, 피벗·영업 공유용 메일 초안까지 생성. 외주 서비스업체 4곳의 상이한 산정 기준으로 AS 대행료를 분리 정산. 미처리건 알림톡 평일 정기 발송</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IT·인사총무·법무</strong></td>
+                                <td>R25006 퇴사자 계정 초기화<br>R26021 근태 결재 알림<br>R26011 석식 신청 접수/이관<br>R26009 연차사용료 납부 알림<br>R26019 계약 만료일 알림<br>R26018 공장도가 등록 알림<br>R26020 환율 정보 알림</td>
+                                <td>퇴사일 도래 시 Entra ID 비밀번호 초기화·MFA 해제·디바이스 삭제·로그인 차단을 Graph API로 자동 수행. 결재 대기/완료를 Teams 개인 채팅으로 통보. Forms 신청을 실시간 접수해 중복 제거 후 이관</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div class="notion-h3">4. 기술력 및 관리 역량</div>
+                <div class="notion-h3">4. 실행 방식 구성</div>
                 <ul class="notion-ul">
-                    <li><strong>ERP 통합</strong>: 사내 ERP 시스템과 SQL을 연동하여 데이터 정합성 보장 및 고도화된 자동화 리포팅 구현</li>
-                    <li><strong>종합 보안 관리</strong>: RPA 운영뿐만 아니라 사용자 계정 관리 및 전사 보안 정책 수립/관리 병행</li>
-                    <li><strong>통합 모니터링</strong>: 15개 프로세스의 에러 핸들링 및 실시간 모니터링 시스템 구축</li>
+                    <li><strong>스케줄 19건 · 트리거 3건 · 인스턴트(요청 시) 1건</strong>: 정기 실행 위주이며, Forms 등록과 Teams 키워드 입력을 트리거로 쓰는 실시간 과제도 운영</li>
+                    <li><strong>운영 판단 기록</strong>: 요청 부서 미응답 등으로 중단된 과제는 '미운영 사유'를 대장에 남겨 이력 관리 (현재 2건)</li>
+                    <li><strong>중복 과제 통합</strong>: 유사 과제(제품/부품 가격 모니터링)는 하나의 과제로 통합해 유지보수 대상 최소화</li>
                 </ul>
 
-                <div class="notion-h3">5. 담당 역할 및 책임</div>
+                <div class="notion-h3">5. 기술력 및 관리 역량</div>
+                <ul class="notion-ul">
+                    <li><strong>기간계 연동</strong>: AS/400, SQL Server, 사내 경영정보시스템 데이터를 조회·가공하여 정합성 있는 자동화 리포팅 구현</li>
+                    <li><strong>Microsoft Graph API 직접 호출</strong>: 커넥터가 지원하지 않는 계정 보안 작업(MFA 해제, 디바이스 삭제 등)을 OAuth2로 처리</li>
+                    <li><strong>Desktop + Cloud 혼합 설계</strong>: 화면 조작이 필요한 업무는 PAD, 데이터·알림 중심 업무는 Cloud Flow로 분리해 안정성과 유지보수성 확보</li>
+                    <li><strong>솔루션 패키징</strong>: Dataverse 솔루션 단위로 내보내기/가져오기하여 버전 관리</li>
+                </ul>
+
+                <div class="notion-h3">6. 담당 역할 및 책임</div>
                 <div class="notion-table-wrap">
                     <table class="notion-table">
                         <thead>
@@ -186,17 +229,18 @@ document.addEventListener('DOMContentLoaded', () => {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td>전략 수립</td><td>RPA 도입 로드맵 설계 및 기대 성과(ROI) 분석</td></tr>
-                            <tr><td>개발/운영</td><td>Power Automate 기반 15개 과제 핵심 로직 설계 및 유지보수</td></tr>
-                            <tr><td>데이터 관리</td><td>사내 ERP SQL 쿼리 최적화 및 DB 연동 자동화</td></tr>
-                            <tr><td>보안/행정</td><td>M365 사용자 계정 관리 및 사내 정보 보안 관리</td></tr>
+                            <tr><td>전략 수립</td><td>RPA 도입 로드맵, 과제 접수·타당성 검토·우선순위 결정</td></tr>
+                            <tr><td>개발/운영</td><td>Power Automate 기반 과제 설계·개발·고도화, 상시 모니터링 및 장애 대응</td></tr>
+                            <tr><td>데이터 관리</td><td>기간계 DB 연동 쿼리 작성, 결과 파일 서식 표준화</td></tr>
+                            <tr><td>문서/교육</td><td>프로세스 정의서·사용자 매뉴얼 작성, 교육 자료 제작, 현업 담당자 교육</td></tr>
+                            <tr><td>보안/행정</td><td>RPA 실행 계정·M365 사용자 계정 관리, 자격 증명 노출 점검</td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <div class="notion-check-title"><i class='bx bxs-check-circle'></i> 마무리 멘트</div>
                 <div class="notion-quote">
-                    RPA Leader로서 자동화 문화 정착과 확산까지의 전 과정을 주도했습니다. 수작업 업무를 효율적인 자동화 프로세스로 전환하며, '일하는 방식의 변화'를 이끌어낸 이 경험은 앞으로 어떤 조직에서도 지속 가능한 효율성을 만들어낼 동력이 될 것입니다.
+                    개별 자동화 몇 건이 아니라, 요청 접수부터 개발, 문서화, 운영, 종료 판단까지 이어지는 운영 체계를 처음부터 만들었습니다. 이 경험은 어떤 조직에서도 자동화를 일회성 프로젝트가 아닌 지속 가능한 업무 방식으로 정착시키는 기반이 됩니다.
                 </div>
             </div>
             `,
@@ -1351,6 +1395,100 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             startDate: '2023-04-01',
             endDate: '2023-05-31'
+        },
+        {
+            id: 'ai-0', type: 'ai',
+            shortTitle: 'R사 욕실 제조 업체 AI(Claude Code) 도입 · MCP · ERP 전환', color: '#e17055', icon: 'bx bxs-brain',
+            bullet1: '전직원 Claude 교육 · AI 사용자 6명 → 31명', bullet2: 'M365 MCP 제작/관리 · 레거시 ERP 인사 모듈 AI 마이그레이션',
+            title: 'Claude Code 기반 AI 도입 · M365 MCP · ERP 마이그레이션', company: 'R사 욕실 제조 업체', duration: '2026 ~ 현재',
+            role: 'AI 도입 교육 / MCP 제작·운영 / ERP 인사 모듈 설계 및 AI 기반 구축', tech: ['Claude Code', 'MCP (Model Context Protocol)', 'Microsoft 365 (Teams, Outlook 등)', 'Microsoft Graph API', 'ERP 마이그레이션'],
+            achievements: '전직원 대상 Claude 기초 교육으로 AI 사용자 6명 → 31명 확대. M365 전반 MCP를 직접 제작·관리. 레거시 ERP의 인사 영역 AI 마이그레이션 진행 중.',
+            desc: 'RPA로 다져진 자동화 경험을 AI로 확장하여, 전직원 교육을 통한 AI 활용 저변 확대, Microsoft 365 연동 MCP 제작·운영, 레거시 ERP의 AI 기반 마이그레이션까지 수행하고 있습니다.',
+            customHTML: `
+            <div class="modal-article" style="padding: 1.5rem;">
+                <div class="notion-h2">Claude Code 기반 AI 도입 · M365 MCP · ERP 마이그레이션</div>
+
+                <div class="notion-metrics-grid">
+                    <div class="metric-card">
+                        <span class="metric-value">6 → 31명</span>
+                        <span class="metric-label">AI 사용자 수 확대</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-value">전직원</span>
+                        <span class="metric-label">Claude 기초 사용 교육</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-value">M365 MCP</span>
+                        <span class="metric-label">직접 제작 · 배포 · 관리</span>
+                    </div>
+                </div>
+
+                <table class="notion-props-table">
+                    <tr>
+                        <td class="prop-label"><i class='bx bx-calendar'></i> Date</td>
+                        <td class="prop-value">2026 ~ 현재 (진행 중)</td>
+                    </tr>
+                    <tr>
+                        <td class="prop-label"><i class='bx bxs-tag-alt'></i> Tags</td>
+                        <td class="prop-value">
+                            <span class="m-tag" style="background: rgba(225, 112, 85, 0.2); color: #fab1a0;">Claude Code</span>
+                            <span class="m-tag">MCP</span>
+                            <span class="m-tag">Microsoft 365</span>
+                            <span class="m-tag">Teams</span>
+                            <span class="m-tag">Outlook</span>
+                            <span class="m-tag">ERP 마이그레이션</span>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="notion-h3">1. 개요</div>
+                <div class="notion-callout">
+                    <i class='bx bxs-bolt-circle' style="color: #feca57;"></i>
+                    <div class="notion-callout-text">
+                        <strong>"자동화(RPA)에서 AI 활용 문화로"</strong><br>
+                        RPA 운영 경험을 바탕으로 Claude Code를 조직에 도입했습니다. 사용자 교육, 업무 시스템 연동(MCP), 레거시 시스템 전환이라는 세 축으로 AI 활용 범위를 넓히고 있습니다.
+                    </div>
+                </div>
+
+                <div class="notion-h3">2. 전직원 Claude 교육</div>
+                <ul class="notion-ul">
+                    <li><strong>대상</strong>: 전직원 대상 Claude 기초 사용 방법 교육</li>
+                    <li><strong>성과</strong>: AI 사용자가 기존 <strong>6명에서 31명</strong>으로 확대</li>
+                    <li><strong>의의</strong>: 일부 개발·IT 인력 중심이던 AI 활용을 일반 업무 부서까지 넓혀 활용 저변 확보</li>
+                </ul>
+
+                <div class="notion-h3">3. Microsoft 365 MCP 제작 · 관리</div>
+                <ul class="notion-ul">
+                    <li><strong>범위</strong>: Teams, Outlook 등 Microsoft 365 전반을 AI가 조회·활용할 수 있도록 MCP(Model Context Protocol) 서버를 직접 제작</li>
+                    <li><strong>운영</strong>: 제작에 그치지 않고 사용자에게 배포하고 지속적으로 관리</li>
+                    <li><strong>기반 역량</strong>: RPA 과제에서 쌓은 Microsoft Graph API, 인증/권한 관리 경험을 MCP 설계에 활용</li>
+                </ul>
+
+                <div class="notion-h3">4. 레거시 ERP 마이그레이션 (진행 중)</div>
+                <div class="notion-table-wrap">
+                    <table class="notion-table">
+                        <thead>
+                            <tr><th>항목</th><th>내용</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>배경</td><td>C#, VB 6.0 등 서로 다른 기술로 개발된 기존 ERP를 현대적 구조로 전환</td></tr>
+                            <tr><td>담당 영역</td><td><strong>인사 영역</strong> 전담</td></tr>
+                            <tr><td>접근 방식</td><td>방대한 데이터를 먼저 설계(분석·구조화)하고, 구축은 AI를 활용해 진행</td></tr>
+                            <tr><td>현재 단계</td><td>초기 단계 (설계 중심, 구축 착수)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="notion-check-title"><i class='bx bxs-check-circle'></i> 마무리 멘트</div>
+                <div class="notion-quote">
+                    AI를 개인 생산성 도구에 머물게 하지 않고, 교육으로 사용자를 늘리고, MCP로 업무 시스템과 연결하며, 레거시 전환 같은 대규모 과제에 투입하는 것까지 조직 단위로 실행하고 있습니다.
+                </div>
+            </div>
+            `,
+            files: [],
+            screenshots: [],
+            startDate: '2026-01-01',
+            endDate: '2026-12-31'
         }
     ];
 
@@ -1405,8 +1543,12 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.animationDelay = delay;
             card.onclick = () => openModal(p.id);
 
-            const typeLabel = p.type === 'rpa' ? 'Power Automate' : 'Power Apps';
-            const labelColor = p.type === 'rpa' ? '#6c5ce7' : '#00b894';
+            const typeMeta = {
+                rpa: ['Power Automate', '#6c5ce7'],
+                app: ['Power Apps', '#00b894'],
+                ai: ['Claude Code · AI', '#e17055']
+            }[p.type] || ['Project', '#6c5ce7'];
+            const [typeLabel, labelColor] = typeMeta;
 
             card.innerHTML = `
                 <div class="notion-card-body">

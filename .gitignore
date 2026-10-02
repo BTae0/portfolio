@@ -1,0 +1,28 @@
+# 사내 RPA 통합관리대장 및 산출 문서 (회사 내부 정보)
+RPA 업무자동화 통합관리대장/
+
+# 개인 증빙 서류 및 PDF 빌드 산출물
+한라대학교_*.pdf
+배태영_포트폴리오.pdf
+tools/
+
+# 비밀 정보
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+credentials.json
+serviceAccount*.json
+
+# 빌드 산출물, 로그, 임시 파일
+dist/
+build/
+node_modules/
+*.log
+*.tmp
+~$*
+.DS_Store
+Thumbs.db
